@@ -1,0 +1,44 @@
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+
+.mainLogo {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 400px;
+}
+
+.lowerLogos {
+    display: flex;
+    justify-content: space-around;
+}
+
+#headernav {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 5%;
+}
+
+#headerNav h1 {
+    display: flex;
+    width: 25%;
+    font-weight: 500;
+}
+
+#Navigation {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+#Navigation p {
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+.highlight {
+    color: #654641;
+    font-weight: 700;
+  }

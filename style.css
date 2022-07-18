@@ -1,44 +1,201 @@
+:root {
+  --black: rgba(0,0,0,1);
+  --nighttime-blue: rgb(3, 18, 37);
+  --latte: rgba(215,199,185,1);
+  --latte-lite: rgba(215,199,185,0.3);
+  --dusty-pink: rgba(231,178,166,1);
+  --dusty-pink-lite: rgba(231,178,166,0.3);
+  --white: rgba(255,255,255,1);
+}
+
 body {
     font-family: 'Poppins', sans-serif;
   }
 
-.mainLogo {
+  /*Em Nanscawen Creative entry page*/
+
+  #logoGrid {
+    margin: 0px 0%;
+    background-color: var(--nighttime-blue);
+    display: grid;
+    grid-template-rows: 100vh;
+    grid-template-columns: 50vw 50vw;
+    grid-template-areas:
+    "designLogo writingLogo";
+  }
+
+  .logoGridArea {
+    margin: 70px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: grid;
+    justify-content: space-between;
+  }
+
+  #designLogo {
+    grid-area: designLogo;
+    background-image: url("../Images/BusinessLogo/mainlogo2.png");
+  }
+
+  #writingLogo {
+    grid-area: writingLogo;
+    background-image: url("../Images/BusinessLogo/WritingLogo/mainlogo2.png");
+  }
+
+  /*Em Nanscawen Design entry page*/
+
+  #HeroSection {
+    background-image: url("../Images/BackgroundShapes/Half-dusty-pink-tilt.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+  }
+
+  .designLogo {
     display: flex;
+    align-content: center;
     justify-content: center;
-    margin-top: 100px;
-    margin-bottom: 400px;
-}
+    background-image: url("../Images/BusinessLogo/mainlogo2.png");
+    width: 500px;
+    height: 500px;
+  }
 
-.lowerLogos {
-    display: flex;
-    justify-content: space-around;
-}
-
-#headernav {
+  #navBar {
     display: flex;
     flex-direction: row;
     margin: 0px 5%;
-}
-
-#headerNav h1 {
-    display: flex;
-    width: 25%;
-    font-weight: 500;
-}
-
-#Navigation {
-    display: flex;
-    width: 50%;
-    align-items: center;
-    justify-content: space-evenly;
   }
 
-#Navigation p {
+  #navigation {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  #navigation p {
     cursor: pointer;
     text-decoration: none;
   }
-
-.highlight {
-    color: #654641;
+  /*.icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 25%;
+  }
+  .icons img {
+    margin: 5px;
+    cursor: pointer;
+    justify-content: right;
+  }*/
+  .highlight {
+    color: var(--nighttime-blue);
     font-weight: 700;
   }
+
+  #topicContainer {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--latte);
+    width: 80%;
+    align-content: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+
+  .topicBar {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    align-content: center;
+    justify-content: space-around;
+    color: var(--nighttime-blue);
+  }
+
+  #aboutContainer {
+    background-image: url("../Images/BackgroundShapes/Half-dusty-pink-tilt-inverted.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+    margin-bottom: 30px;
+  }
+
+  .flexContainer {
+      display: flex;
+      height: 400px;
+      margin: 10px;
+      padding: 10px;
+      justify-content: space-around;
+    }
+
+    .Research {
+      margin: 10px;
+      padding: 10px;
+      width: 250px;
+      height: 250px;
+    }
+
+    .Definition {
+      margin: 10px;
+      padding: 10px;
+      width: 250px;
+      height: 250px;
+    }
+
+    .Design {
+      margin: 10px;
+      padding: 10px;
+      width: 250px;
+      height: 250px;
+    }
+
+    .Delivery {
+      margin: 10px;
+      padding: 10px;
+      width: 250px;
+      height: 250px;
+    }
+
+  #workContainer {
+    background-image: url("../Images/BackgroundShapes/Half-dusty-pink-tilt.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+  }
+
+  #workGrid {
+    margin: 0px 5%;
+    display: grid;
+    min-height: 500px;
+    height: 70vh;
+    grid-template-rows: 300px;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    "firstFeaturedWork secondFeaturedWork"
+  }
+  
+  .firstFeaturedWork {
+    grid-area: firstFeaturedWWork;
+  }
+  
+  .secondFeaturedWork {
+    grid-area: secondFeaturedWork;
+  }
+
+  @media only screen and (max-width: 600px) {
+    #workGrid {
+      margin: 0px 5%;
+      display: grid;
+      min-height: 200px;
+      height: 55vh;
+      grid-template-rows: 300px;
+      grid-template-columns: 50% 50%;
+      grid-template-areas:
+      "firstFeaturedWork secondFeaturedWork"
+    }
+  }
+
